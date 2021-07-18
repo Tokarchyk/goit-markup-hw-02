@@ -15,10 +15,12 @@
 }
 
 /* Button */
-
-.blue:hover .blue:focus {
-  color: var(--primary-white-color);
+.hero-text {
+  color: #ffffff;
+}
+.hero-button {
   background-color: var(--accent-color);
+  font: inherit;
 }
 .button {
   color: var(--title-text-color);
@@ -47,15 +49,16 @@
   line-height: 1.7;
 }
 /* logo */
-.web {
-  color: #2196f3;
-}
 
 .logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
+}
+.logo .web {
+  color: #2196f3;
 }
 
 /* site-nav */
@@ -76,7 +79,11 @@
   color: var(--accent-color);
 }
 /* hero */
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
+  background-color: #2f303a;
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -117,10 +124,19 @@
   text-align: center;
 }
 /* footer */
-.footer .footer-title {
-  color: var(--primary-white-color);
+.footer {
+  background-color: #2f303a;
 }
-
+.footer-title {
+  color: #ffffff;
+  font-style: normal;
+}
+.footer .logo {
+  color: #2196f3;
+}
+.footer .studio {
+  color: #ffffff;
+}
 /* Portfolio */
 .pictures .title {
   color: var(--title-text-color);
@@ -128,12 +144,11 @@
   font-size: 18px;
   line-height: 2;
 }
-.pointer {
-  cursor: pointer;
-}
-.buttons .all {
+.pointer:hover,
+.pointer:focus {
+  color: var(--title-text-color);
   background-color: var(--accent-color);
-  font: inherit;
+  cursor: pointer;
 }
 .buttons {
   list-style: none;
